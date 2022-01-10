@@ -1,0 +1,25 @@
+sudo su
+
+
+curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
+
+#Download appropriate package for the OS version
+#Ubuntu 18.04
+curl https://packages.microsoft.com/config/ubuntu/18.04/prod.list > /etc/apt/sources.list.d/mssql-release.list
+
+apt-get update
+sudo ACCEPT_EULA=Y apt-get install -y msodbcsql17
+sudo ACCEPT_EULA=Y apt-get install -y mssql-tools
+echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
+source ~/.bashrc
+sudo apt-get install -y unixodbc-dev
+sudo ACCEPT_EULA=Y apt install python3-pip
+python3 -m pip install --upgrade pip
+pip3 install --upgrade setuptools
+pip3 install azure-keyvault-secrets
+pip3 install azure.identity
+pip3 install pyodbc
+
+
+touch testing.py
+vi testing.py
