@@ -19,9 +19,9 @@ The current project worked on the basic configurations of the following design:
 ## Getting Started
 
 1. Create an Azure subscription
-2. Install [Azure CLI] (https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
-3. Install [Terraform] (https://learn.hashicorp.com/tutorials/terraform/install-cli)
-4. Install Azure Terraform [VS Code Extension] (https://docs.microsoft.com/en-us/azure/developer/terraform/configure-vs-code-extension-for-terraform?tabs=azure-cli)
+2. Install Azure CLI: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
+3. Install Terraform: https://learn.hashicorp.com/tutorials/terraform/install-cli
+4. Install Azure Terraform VS Code Extension: https://docs.microsoft.com/en-us/azure/developer/terraform/configure-vs-code-extension-for-terraform?tabs=azure-cli
 
 ## Build the resources
 
